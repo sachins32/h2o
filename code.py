@@ -1,4 +1,5 @@
 import h2o
+import logging
 from h2o.estimators.glm import H2OGeneralizedLinearEstimator
 h2o.init(ip="h2o-h2o-3.h2o-system.svc.cluster.local", port=54321)
 
@@ -35,4 +36,4 @@ boston_glm.train(x = predictors,
 predict = boston_glm.predict(test)
 
 # View a summary of the prediction
-predict.head()
+logging.INFO(predict.head())
