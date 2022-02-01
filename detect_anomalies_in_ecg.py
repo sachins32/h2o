@@ -1,6 +1,6 @@
 import h2o
 from h2o.estimators.isolation_forest import H2OIsolationForestEstimator
-h2o.init()
+h2o.init(ip="h2o-h2o-3.h2o-system.svc.cluster.local", port=54321)
 
 # import the ecg discord datasets:
 train = h2o.import_file("http://s3.amazonaws.com/h2o-public-test-data/smalldata/anomaly/ecg_discord_train.csv")
