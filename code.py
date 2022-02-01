@@ -1,6 +1,6 @@
 import h2o
 from h2o.estimators.glm import H2OGeneralizedLinearEstimator
-h2o.init()
+h2o.init(ip="h2o-h2o-3.h2o-system.svc.cluster.local", port=54321)
 
 # import the boston dataset:
 # this dataset looks at features of the boston suburbs and predicts median housing prices
