@@ -97,6 +97,7 @@ h2o_models.leaderboard[:3,:]
 lead_models = list(h2o_models.leaderboard['model_id'].as_data_frame().iloc[:,0])
 
 lead_models
+print(lead_models)
 
 lead_model1 = h2o_aml.get_model(lead_models[0])
 lead_model2 = h2o_aml.get_model(lead_models[1])
