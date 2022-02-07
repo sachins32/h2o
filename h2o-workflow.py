@@ -30,11 +30,11 @@ df = pd.read_csv(filename)
 
 list(df.columns)
 
-path = "/home/jovyan/" + model_name + "/"
+#path = "/home/jovyan/" + model_name + "/"
 
-if not os.path.isdir(path):
-    os.mkdir(path)
-    print("Created dir :", path)
+#if not os.path.isdir(path):
+#    os.mkdir(path)
+#    print("Created dir :", path)
 
 
 df[target].value_counts()
