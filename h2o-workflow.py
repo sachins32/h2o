@@ -49,17 +49,17 @@ for col in list(df.columns):
     if 'Unnamed' in col:
         df.drop([col], axis=1, inplace=True)
 
-from pandas_profiling import ProfileReport
+#from pandas_profiling import ProfileReport
 
-profile = ProfileReport(df, title="Data Profiling Report")
+#profile = ProfileReport(df, title="Data Profiling Report")
 
-profile.to_file(path+report_path)
+#profile.to_file(path+report_path)
 
-profile
+#profile
 
-my_report = sv.analyze(df, target_feat=target, pairwise_analysis='on')
+#my_report = sv.analyze(df, target_feat=target, pairwise_analysis='on')
 
-my_report.show_html(filepath= report_path, layout='vertical') # Default arguments will generate to "SWEETVIZ_REPORT.html"
+#my_report.show_html(filepath= report_path, layout='vertical') # Default arguments will generate to "SWEETVIZ_REPORT.html"
 
 #H2O
 
