@@ -39,7 +39,7 @@ list(df.columns)
 
 df[target].value_counts()
 
- df[target] = df[target].apply(lambda x: True if x==1 else False)
+df[target] = df[target].apply(lambda x: True if x==1 else False)
 
 # df[target].value_counts()
 
